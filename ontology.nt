@@ -1,0 +1,838 @@
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology was created by Davide Apolloni for his masters' thesis on digital curation. The supervisor is Simona Caraceni, professor at University of Bologna and active member of Cineca Visit Lab. The co-supervisor is Silvano Imboden, computer scientist and expert on 3D graphics at Cineca Visit Lab." .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3> <http://www.w3.org/2000/01/rdf-schema#comment> "This ontology was created to provide a framework aimed at sustaining digital preservation practices. Starting from a main repository, which is usually a dedicated external hard drive where files are stored, classes, object properties and data properties will help to define the relationships and dependances among the various files that are contained. The properties represent a basic starting point to take care of digital objects and their long-term preservations. As a matter of fact, adding the kind of information which is presented here is fundamental to ensure a better understanding and a more durable life to the digital objects." .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3> <http://www.w3.org/2000/01/rdf-schema#comment> "To provide a real-life implementation, the digital curation activity has been carried out here on the first of the three hard disks storing all the digital objects produced by Cineca Visit Lab, the 3D graphic laboratory located in Casalecchio di Reno (BO). The ontology will be implemented even on the other two hard disks, to ensure a better preservation to the files, other than testifying how a framework can be used and adapted even when the involved files are different. The final result shows an innovative way to take care of digital objects in order to assure them long-term preservation over years." .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3> <http://www.w3.org/2002/07/owl#versionInfo> "version 1.0" .
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A folder, or a file, usually belongs to a main one, which is their father." .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.w3.org/2000/01/rdf-schema#comment> "A folder can contain single files." .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A folder can contain other folders containing other folders or elements." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows to write a brief description of the file or folder, taking into consideration its contents and history." .
+# 
+# http://purl.org/dc/elements/1.1/format
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/elements/1.1/format> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows to define the format of the file." .
+# 
+# http://purl.org/dc/elements/1.1/type
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/elements/1.1/type> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows to define the type of the file, which is different than the format. A file type can simply be a directory, for example, whereas the format requires to state the file extension." .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> <http://www.w3.org/2000/01/rdf-schema#comment> "A folder contains files of various formats. This properties allows to define them and write them as a string." .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#long> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows to describe the size that the file occupies." .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property allows to define how elements are organized inside a bigger folder." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A very important step when performing the digital curation of objects concerns the division of them over the years. This action can be done both by the institution or by the digital curator." .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder> <http://www.w3.org/2000/01/rdf-schema#comment> "A digital curator should be able to identify macroareas where common objects can be stored. Finding macroareas makes the work of the digital curator faster, easier and definitely more accurate. It also gives the opportunity to produce a more organized set of files that the institution can benefit from." .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository> <http://www.w3.org/2000/01/rdf-schema#comment> "The main repository is usually an external hard drive where the institution stored its files. However, it might be even a computer or other storage devices, if the institution decided to adopt a different approach." .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> <http://www.w3.org/2000/01/rdf-schema#comment> "Single files might be found, and if they appear to be too important to be removed, they must be classified as such." .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> <http://www.w3.org/2000/01/rdf-schema#comment> "Instead each backup folder there might be sub and sub-subfolders. It is very important to avoid having extremely long file paths." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT> <http://purl.org/dc/elements/1.1/description> "Picture of a landscape seen from the inside" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT> <http://purl.org/dc/elements/1.1/format> ".jpg" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "2,89 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2> <http://purl.org/dc/elements/1.1/description> "Picture of a landscape seen from the inside" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2> <http://purl.org/dc/elements/1.1/format> ".jpg" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "1,79 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF> <http://purl.org/dc/elements/1.1/description> "Vnc file" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF> <http://purl.org/dc/elements/1.1/format> ".vnc" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "99 byte" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction> <http://purl.org/dc/elements/1.1/description> "Files for Apa project" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".png (388), .blend (30), .tga (12), .blend1 (8), .blend2 (1), .xcf (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "444 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36> <http://purl.org/dc/elements/1.1/description> "cmake-3.6.0-Linux-x86_64 installer" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".txt (1215), .html (1184), .rst (1182), .cmake (666), .in (69), .f90 (30), .png (19), .7 (14), .c (9), .js (9), .f (7), .cxx (6), .1 (5), .css (5), .vim (3), .bat (2), .h (2), .sh (2), .vsmacros (2), .cpp (1), .desktop (1), .el (1), .gif (1), .ico (1), .inv (1), .m4 (1), .pfx (1), .plist (1), .xml (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "24,0 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza> <http://purl.org/dc/elements/1.1/description> "Safety courses and tests" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".pdf (16)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "23,3 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3> <http://purl.org/dc/elements/1.1/description> "Demo application" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".tcl (329), .gif (81), .enc (78), .html (57), .itk (54), .vtk (40), .dll (37), .txt (23), .msg (14), .jpg (11), .xbm (11), .bmp (7), .exe (5), .rc (4), .itcl (3), .nroff (3), .null (3), .tex (3), .text (3), .wiki (3), .eps (2), .lib (2), .tmml (2), .bak (1), .bat (1), .c (1), .ico (1), .idb (1), .latex (1), .list (1), .obj (1), .pdb (1), .ppm (1), .ps (1), .terms (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "57,9 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination> <http://purl.org/dc/elements/1.1/description> "Explanation of the production pipeline concerning projects such as Apa" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (36), .html (16), .css (8), .png (3)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "12,4 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5> <http://purl.org/dc/elements/1.1/description> "Python web framework, version 1.5.5" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".py (2822), .po (2362), .mo (2360), .txt (319), .html (281), .gif (68), .json (62), .png (61), .js (53), .xml (37), .css (31), .dbf (16), .shp (14), .shx (14), .gz (10), .prj (10), .egg (6), .sh (5), .kml (4), .1 (3), .pyc (3), .zip (3), .bat (2), .csv (2), .jpg (2), .sample (2), .vrt (2), .bz2 (1), .cfg (1), .conf (1), .coveragerc (1), .dot-file (1), .eot (1), .ico (1), .ignoreme (1), .in (1), .keep (1), .rst (1), .sql (1), .svg (1), .tar (1), .tgz (1), .tpl (1), .unkn (1), .unknown (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "18,1 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius> <http://purl.org/dc/elements/1.1/description> "Fractalius installer (image editing plugin)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".8bf (2), .bin (2), .chm (1), .exe (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "3,77 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14> <http://purl.org/dc/elements/1.1/description> "Presentation of sacrofago's project schedule" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14> <http://purl.org/dc/elements/1.1/format> ".doc" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "23,5 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit> <http://purl.org/dc/elements/1.1/description> "ATI images and videos concerning APA conference, visitlab images" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (18), .avi (2), .mp4 (2)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "1,67 GB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "5,28 GB" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> "1012 elements" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata> <http://purl.org/dc/elements/1.1/description> "Scripts and metadata" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".py (21), .gif (20), .pyc (18), .html (17), .css (15), .png (13), .js (12), .db (2), .jpg (2), .conf (1), .json (1), .txt (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "383 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA> <http://purl.org/dc/elements/1.1/description> "Rendered video of Pavia made with Blender" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".mp4 (1), .ogg (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "71,7 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2> <http://purl.org/dc/elements/1.1/description> "Photoshop CS2" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".psd (75), .htm (48), .reg (45), .aco (31), .cha (31), .pdf (24), .html (18), .gif (17), .8bf (11), .8bi (9), .afs (6), .jpg (6), .msi (5), .exe (4), .tb0 (4), .ini (3), .cab (2), .md0 (2), .txt (2), .wri (2), .dll (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "332 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures> <http://purl.org/dc/elements/1.1/description> "Personal pictures, wallpapers, guides, movie pictures" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures> <http://purl.org/dc/elements/1.1/type> "directory" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (919), .png (41), .blend (4), .pdf (3), .mov (3), .avi (2), .bak (1), .gif (1), .ini (1), .mp4 (1), .tga (1), .txt (1), .xcf (1), .zip (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "5,25 GB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork> <http://purl.org/dc/elements/1.1/description> "Python exercises" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".html (45), .py (19), .ds_store (2), .ht (1), .pdf (1), .pyw (1), .xml (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "221 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master> <http://purl.org/dc/elements/1.1/description> "Python library" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".tex (11), .py (10), .bib (1), .md (1), .pdf (1), .txt (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "878 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT> <http://purl.org/dc/elements/1.1/description> "Qt programming" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".cpp (127), .png (107), .hpp (79), .o (41), .pro (39), .h (13), .qrc (10), .cmake (9), .dat (9), .svg (8), .txt (7), .wav (7), .make (4), .qm (4), .user (4), .autosave (3), .js (3), .ts (3), .bin (2), .out (2), .a (1), .c (1), .check_cache (1), .gif (1), .html (1), .in (1), .includecache (1), .internal (1), .log (1), .marks (1), .py (1), .tpl (1), .types (1), .ui (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "6,52 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QtLutEditor
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QtLutEditor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QtLutEditor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QtLutEditor> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QtLutEditor> <http://purl.org/dc/elements/1.1/description> "Cross-platform C++, JavaScript and QML integrated development environment which simplifies GUI application development" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QtLutEditor> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".cpp (13), .h (12), .ui (3), .pro (1), .qrc (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QtLutEditor> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "52,6 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest> <http://purl.org/dc/elements/1.1/description> "Video showing a 3D oak" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest> <http://purl.org/dc/elements/1.1/format> ".avi" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "2,18 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate> <http://purl.org/dc/elements/1.1/description> "Video showing a 3D oak" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate> <http://purl.org/dc/elements/1.1/format> ".avi" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "2,17 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot> <http://purl.org/dc/elements/1.1/description> "Blender render farm sceenshots - animatic" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (12)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "1,11 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05> <http://purl.org/dc/elements/1.1/description> "Application" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".py (41), .html (24), .css (12), .js (12), .conf (4), .png (4), .sqlite3 (4), .txt (4), .sh (3), .wsgi (3), .crt (2), .key (2), .bash (1), .csr (1), .ico (1), .srl (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "418 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm> <http://purl.org/dc/elements/1.1/description> "Application" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".html (28), .py (20), .pyc (19), .png (16), .js (10), .css (6), .in (4), .blend (3), .gif (2), .ttf (2), .txt (2), .bk (1), .c (1), .conf (1), .db (1), .eot (1), .ico (1), .map (1), .sh (1), .svg (1), .woff (1), .wgi (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "620 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh> <http://purl.org/dc/elements/1.1/description> "PostScript Printer Description file" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh> <http://purl.org/dc/elements/1.1/format> ".ppd" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "95,0 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15> <http://purl.org/dc/elements/1.1/description> "Simple DirectMedia Layer, version 1.2.15" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".c (342), .h (331), .html (205), .3 (174), .o (110), .lo (55), .plist (51), .vcproj (20), .cpp (18), .cc (16), .m (15), .dsp (14), .nib (13), .m4 (11), .pbxproj (11), .in (10), .pch (9), .strings (9), .sh (8), .s (7), .txt (7), .icns (6), .vcp (6), .asm (5), .zip (4), .bmp (3), .csh (3), .r (3), .sln (3), .bin (2), .dc (2), .dsw (2), .info (2), .rc (2), .rtf (2), .amigaos (1), .beos (1), .dat (1), .default (1), .gif (1), .guess (1), .hg (1), .inc (1), .lib (1), .log (1), .macos (1), .macosx (1), .minimal (1), .mint (1), .nanox (1), .nds (1), .os2 (1), .pc (1), .pdf (1), .picogui (1), .pl (1), .porting (1), .ps3 (1), .qnx (1), .qpg (1), .qtopia (1), .riscos (1), .spec (1), .status (1), .sub (1), .symbian (1), .vcw (1), .watcom (1), .wav (1), .wince (1), .wscons (1), .x (1), .xbm (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "5,46 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY> <http://purl.org/dc/elements/1.1/description> "Data files containing geophysical data" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".segy (4)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "108 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW> <http://purl.org/dc/elements/1.1/description> "Visualization tool" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".cpp (2785), .h (2702), .png (1265), .py (704), .qbs (586), .qml (539), .pro (323), .ui (227), .txt (201), .pri (182), .qdoc (173), .xml (127), .jar (125), .qrc (94), .pyc (83), .in (70), .json (49), .js (48), .css (35), .qmlproject (34), .qmltypes (24), .mm (23), .sh (23), .java (21), .c (20), .tsv (19), .svg (18), .0 (17), .ts (16), .conf (15), .qdocinc (14), .1 (13), .pl (13), .qdocconf (13), .m (12), .ico (10), .jpg (10), .out (9), .bat (8), .html (8), .plist (8), .zip (7), .dll (6), .frag (6), .gz (6), .template (6), .vert (6), .xib (6), .xq (6), .2 (5), .exe (5), .data (4), .dylib (4), .ini (4), .md (4), .rc (4), .so (4), .asm (3), .config (3), .creator (3), .files (3), .g (3), .gif (3), .icns (3), .includes (3), .lgplv21 (3), .lgplv3 (3), .metainfo (3), .patch (3), .tex (3), .wxs (3), .creatortheme (2), .gitignore (2), .glsl (2), .inc (2), .input (2), .kms (2), .l (2), .lgpl (2), .manifest (2), .pbxproj (2), .pch (2), .pdf (2), .prf (2), .s (2), .strings (2), .tpl (2), .vmoptions (2), .4d4a4c4 (1), .aegis (1), .annotated (1), .bg (1), .blubb (1), .c++ (1), .command (1), .def (1), .desktop (1), .dia (1), .ds_store (1), .expected (1), .fsh (1), .gitmodules (1), .grass (1), .hpp (1), .htc (1), .ignore (1), .inp (1), .keywords (1), .kwgen (1), .license (1), .linux (1), .map (1), .mingw (1), .narf (1), .odt (1), .osx (1), .properties (1), .qs (1), .rtf (1), .sample (1), .sed (1), .source (1), .storyboard (1), .sty (1), .suo (1), .sx (1), .user (1), .vsh (1), .wildcard (1), .wxl (1), .xpm (1), .zort (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "147 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz> <http://purl.org/dc/elements/1.1/description> "Visitlab pictures" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (8), .zip (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "1.83 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new> <http://purl.org/dc/elements/1.1/description> "Presentation of sacrofago's project schedule" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new> <http://purl.org/dc/elements/1.1/format> ".doc" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "174 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar> <http://purl.org/dc/elements/1.1/description> "WHToolbar builder" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".cpp (3), .o (3), .h (2), .pro (1), .ui (1), .user (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "241 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p> <http://purl.org/dc/elements/1.1/description> "3D trailer" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p> <http://purl.org/dc/elements/1.1/format> ".mov" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "263 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti> <http://purl.org/dc/elements/1.1/description> "Files and explanations on how to install Nvidia driver" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".js (19), .html (7), .css (4), .loaded_0 (1), .loaded_1 (1), .pdf (1), .png (2), .txt (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "998 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06> <http://purl.org/dc/elements/1.1/description> "Video depicting three colored balls jumping" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06> <http://purl.org/dc/elements/1.1/format> ".avi" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "1,35 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20> <http://purl.org/dc/elements/1.1/description> "Bologna delle Acque project images and html files displaying the various images" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (107), .hml (56), .bak (1), .tmp (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "23,5 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa> <http://purl.org/dc/elements/1.1/description> "House project" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (19), .pdf (16), .dwg (6), .pln (6), .bpn (4), .bak (3), .bmp (2), .lck (2), .png (2), .err (1), .mov (1), .txt (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "138 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people> <http://purl.org/dc/elements/1.1/description> "Information concerning people working at Cineca" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".png (38), .js (37), .gif (10), .css (7), .html (6), .txt (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "757 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js> <http://purl.org/dc/elements/1.1/description> "Javascript library for producing interactive data visualizations" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".html (7), .md (3), .js (2), .tsv (2) .json (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "228 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop> <http://purl.org/dc/elements/1.1/description> "Ini file" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop> <http://purl.org/dc/elements/1.1/format> ".ini" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "282 byte" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download> <http://purl.org/dc/elements/1.1/description> "Downloaded files" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".exe (2), .zip (2), .bz2 (1), .msi (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "171 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover> <http://purl.org/dc/elements/1.1/description> "Images showing the content of a 2007 backup" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".cch (3), .jpg (3)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "321 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook> <http://purl.org/dc/elements/1.1/description> "Guides and newspapers" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".pdf (13)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "91,6 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1> <http://purl.org/dc/elements/1.1/description> "Decoding multimedia framework" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".c (1765), .h (700), .s (90), .asm (87), .mak (65), .texi (45), .txt (14), .rc (9), .sh (9), .v (9), .ffpreset (5), .0 (4), .1 (4), .cpp (4), .css (3), .md (3), .conf (2), .m (2), .pl (2), .py (2), .6bit (1), .ffmeta (1), .gplv2 (1), .gplv3 (1), .html (1), .inc (1), .init (1), .lgplv3 (1), .pm (1), .ref (1), .supp (1), .template (1), .xsd (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "10,3 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig> <http://purl.org/dc/elements/1.1/description> "Cache files" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".cache-3 (40)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "80,2 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva> <http://purl.org/dc/elements/1.1/description> "File to share information concerning a project" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva> <http://purl.org/dc/elements/1.1/format> ".mpx" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "8,21 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova> <http://purl.org/dc/elements/1.1/description> "Blender project" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova> <http://purl.org/dc/elements/1.1/format> ".blend" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova> <http://purl.org/dc/elements/1.1/format> "126 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1> <http://purl.org/dc/elements/1.1/description> "Vnc file" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1> <http://purl.org/dc/elements/1.1/format> ".vnc" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1> <http://purl.org/dc/elements/1.1/format> "104 byte" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz> <http://purl.org/dc/elements/1.1/description> "Graph exercises" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".dot (2), .jpg (2)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "2,65 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12> <http://purl.org/dc/elements/1.1/description> "Python extension" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".py (77), .pyc (28), .txt (5), .pyw (2), .pyx (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "396 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs> <http://purl.org/dc/elements/1.1/description> "14,8 MB" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs> <http://purl.org/dc/elements/1.1/description> "Applications" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".h (882), .c (404), .cpp (374), .py (346), .html (201), .png (190), .gif (137), .js (126), .css (79), .txt (65), .tga (52), .hpp (28), .sh (28), .mesh (15), .in (13), .blend (12), .db (12), .inl (9), .a (8), .ttf (7), .wsgi (7), .lib (6), .cc (5), .conf (5), .dll (5), .lua (4), .sql (4), .zip (4), .ico (3), .map (3), .project (3), .pydevproject (3), .svg (3), .eot (2), .scss (2), .so (2), .sqlite3 (2), .woff (2), .config (1), .creator (1), .dylib (1), .exe (1), .files (1), .gitignore (1), .hh (1), .includes (1), .json (1), .la (1), .maa (1), .md (1), .mingw (1), .mm (1), .mma (1), .otf (1), .plist_default (1), .rb (1), .rc (1), .user (1)" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit> <http://purl.org/dc/elements/1.1/description> "Cineca visitlab logo" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpeg (12), .jpg (7), .png (5), .html (2), .xcf (2)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "795 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil> <http://purl.org/dc/elements/1.1/description> "Code" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil> <http://purl.org/dc/elements/1.1/format> ".txt" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "1,53 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log> <http://purl.org/dc/elements/1.1/description> "Nvidia bug report" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log> <http://purl.org/dc/elements/1.1/format> ".gz" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "61,2 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014> <http://purl.org/dc/elements/1.1/description> "Schedule" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014> <http://purl.org/dc/elements/1.1/format> ".xlsx" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "20,1 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501> <http://purl.org/dc/elements/1.1/description> "Applications" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".h (117), .dds (74), .o (72), .cpp (70), .d (57), .mk (7), .tga (4), .a (2), .1 (1), .5 (1), .c (1), .icns (1), .json (1), .linux (1), .ovrf (1), .rules (1), .sh (1), .txt (1), .xml (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "65,5 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro> <http://purl.org/dc/elements/1.1/description> "Geoids, lang, licenses, modules, python" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".py (1339), .dectest (143), .txt (112), .so (63), .pyc (29), .qm (14), .pem (13), .exe (7), .gif (7), .0 (5), .zip (5), .1 (4), .4 (4), .def (4), .pck (4), .au (3), .xml (3), .bat (2), .c (2), .html (2), .pickle (2), .vbs (2), .2 (1), .3 (1), .8svx (1), .a (1), .aif (1), .aifc (1), .aiff (1), .cfg (1), .config (1), .css (1), .ctypes (1), .db (1), .hcom (1), .icns (1), .in (1), .ini (1), .local (1), .o (1), .out (1), .pgm (1), .pyw (1), .rst (1), .sample (1), .sh (1), .sndt (1), .tar (1), .types (1), .voc (1), .wav (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "28,5 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79> <http://purl.org/dc/elements/1.1/description> "Instruction notes" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79> <http://purl.org/dc/elements/1.1/format> ".txt" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "1,06 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list> <http://purl.org/dc/elements/1.1/description> "List of paths explaining where to find some python files" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list> <http://purl.org/dc/elements/1.1/format> ".txt" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "322 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil> <http://purl.org/dc/elements/1.1/description> "Vnc file" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil> <http://purl.org/dc/elements/1.1/format> ".vnc" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "99 byte" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT> <http://purl.org/dc/elements/1.1/description> "Application" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".svn-base (612), .hpp (118), .inl (103), .geom (83), .h (32), .cpp (29), .c (11), .jpg (9), .frag (7), .vert (7), .pro (6), .tmp (5), .png (4), .info (3), .tga (2), .txt (2), .bin (1), .ds_store (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "7,45 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#trime8
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#trime8> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#trime8> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#trime8> <http://purl.org/dc/elements/1.1/description> "Vnc file" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#trime8> <http://purl.org/dc/elements/1.1/format> ".vnc" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#trime8> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "104 byte" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons> <http://purl.org/dc/elements/1.1/description> "Ubuntu icons" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".svg (437), .png (6), .icon (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "675 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo> <http://purl.org/dc/elements/1.1/description> "Project for Unibo" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".png (9), .sh (4), .blend (3), .log (3), .pbs (3), .exr (2), .zip (2), .e1882678 (1), .e1885777 (1), .e1885779 (1), .o18826778 (1), .o1885777 (1), .o1885779 (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "514 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box> <http://purl.org/dc/elements/1.1/description> "Fedora virtual box" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".ova (3), .iso (2), .txt (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "5,64 GB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI> <http://purl.org/dc/elements/1.1/description> "\"Ati alla scoperta di Veio\" project" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".bphys (26070), .jpg (985), .gz (693), .exr (500), .blend (326), .png (174), .wav (75), .jpeg (64), .log (62), .py (38), .db (15), .sh (14), .zip (10), .txt (3), .bat (2), .in (2), .mp4 (2), .blend1 (1), .blend2 (1), .ogg (1), .xcf (1), .planner (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "3,48 GB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps> .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari> <http://purl.org/dc/elements/1.1/description> "Ferrari truck and Bologna images" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (12), .blend (6), .blend1 (2), .jpeg (1), .png (1), .xcf (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "144 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival> <http://purl.org/dc/elements/1.1/description> "Gource video and related explanation" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (1), .mp4 (1), .pdf (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "232 MB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago> <http://purl.org/dc/elements/1.1/description> "\"Il sarcofago degli sposi\" project" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".jpg (3549), .tif (1125), .png (709), .blend (44), .avi (24), .blend1 (13), .mp4 (8), .blend2 (7), .txt (7), .fbx (6), .pdf (6), .zip (6), .gz (2), .svg (2), .xcf (2), .aif (1), .bpn (1), .htm (1), .lck (1), .pln (1), .py (1), .run (1), .sh (1), .tgz (1), .wav (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "7,68 GB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev> <http://purl.org/dc/elements/1.1/description> "Two html pages: a translator and a tool to calculate geographical distance between places" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".html (2)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "2,99 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps> <http://purl.org/dc/elements/1.1/description> "Web applications" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".html (45), .py (43), .gif (41), .js (30), .png (28), .css (19), .sh (12), .svg (6), .txt (4), .c (2), .wsgi (2), .blend (1), .jpg (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "506 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "13,3 GB" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> "27 elements" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#trime8> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "5,91 GB" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> "27 elements" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "1,37 GB" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> "8 elements" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "842 MB" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto> "23 elements" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection> <http://purl.org/dc/elements/1.1/description> "Files for 3d visualization" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".h (20), .cpp (19), .ui (6), .cxx (1), .pro (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "56,6 KB" .
+# 
+# http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop> .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive> <http://purl.org/dc/elements/1.1/description> "Galaxy images" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles> ".raw (7), .bmp (4), .ive (1)" .
+<http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive> <http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize> "6,38 MB" .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/

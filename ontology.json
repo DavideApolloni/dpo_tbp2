@@ -1,0 +1,1518 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property allows to write a brief description of the file or folder, taking into consideration its contents and history."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/format",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property allows to define the format of the file."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property allows to define the type of the file, which is different than the format. A file type can simply be a directory, for example, whereas the format requires to state the file extension."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This ontology was created by Davide Apolloni for his masters' thesis on digital curation. The supervisor is Simona Caraceni, professor at University of Bologna and active member of Cineca Visit Lab. The co-supervisor is Silvano Imboden, computer scientist and expert on 3D graphics at Cineca Visit Lab."
+  }, {
+    "@value" : "This ontology was created to provide a framework aimed at sustaining digital preservation practices. Starting from a main repository, which is usually a dedicated external hard drive where files are stored, classes, object properties and data properties will help to define the relationships and dependances among the various files that are contained. The properties represent a basic starting point to take care of digital objects and their long-term preservations. As a matter of fact, adding the kind of information which is presented here is fundamental to ensure a better understanding and a more durable life to the digital objects."
+  }, {
+    "@value" : "To provide a real-life implementation, the digital curation activity has been carried out here on the first of the three hard disks storing all the digital objects produced by Cineca Visit Lab, the 3D graphic laboratory located in Casalecchio di Reno (BO). The ontology will be implemented even on the other two hard disks, to ensure a better preservation to the files, other than testifying how a framework can be used and adapted even when the involved files are different. The final result shows an innovative way to take care of digital objects in order to assure them long-term preservation over years."
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "version 1.0"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder" ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "13,3 GB"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto" : [ {
+    "@value" : "27 elements"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder" ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#trime8"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "5,91 GB"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto" : [ {
+    "@value" : "27 elements"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder" ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "1,37 GB"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto" : [ {
+    "@value" : "8 elements"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder" ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "842 MB"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto" : [ {
+    "@value" : "23 elements"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#3d_view_wih_selection",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Files for 3d visualization"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".h (20), .cpp (19), .ui (6), .cxx (1), .pro (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "56,6 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#52_galaxy_ive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Galaxy images"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".raw (7), .bmp (4), .ive (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "6,38 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Picture of a landscape seen from the inside"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".jpg"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "2,89 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ACT2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Picture of a landscape seen from the inside"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".jpg"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "1,79 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#AVF",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vnc file"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".vnc"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "99 byte"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ApaProduction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Files for Apa project"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".png (388), .blend (30), .tga (12), .blend1 (8), .blend2 (1), .xcf (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "444 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A very important step when performing the digital curation of objects concerns the division of them over the years. This action can be done both by the institution or by the digital curator."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#CMake36",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "cmake-3.6.0-Linux-x86_64 installer"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".txt (1215), .html (1184), .rst (1182), .cmake (666), .in (69), .f90 (30), .png (19), .7 (14), .c (9), .js (9), .f (7), .cxx (6), .1 (5), .css (5), .vim (3), .bat (2), .h (2), .sh (2), .vsmacros (2), .cpp (1), .desktop (1), .el (1), .gif (1), .ico (1), .inv (1), .m4 (1), .pfx (1), .plist (1), .xml (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "24,0 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Safety courses and tests"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".pdf (16)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "23,3 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#DEMOSALAMACCHINE3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Demo application"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".tcl (329), .gif (81), .enc (78), .html (57), .itk (54), .vtk (40), .dll (37), .txt (23), .msg (14), .jpg (11), .xbm (11), .bmp (7), .exe (5), .rc (4), .itcl (3), .nroff (3), .null (3), .tex (3), .text (3), .wiki (3), .eps (2), .lib (2), .tmml (2), .bak (1), .bat (1), .c (1), .ico (1), .idb (1), .latex (1), .list (1), .obj (1), .pdb (1), .ppm (1), .ps (1), .terms (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "57,9 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Dissemination",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Explanation of the production pipeline concerning projects such as Apa"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (36), .html (16), .css (8), .png (3)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "12,4 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Django-1.5.5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Python web framework, version 1.5.5"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".py (2822), .po (2362), .mo (2360), .txt (319), .html (281), .gif (68), .json (62), .png (61), .js (53), .xml (37), .css (31), .dbf (16), .shp (14), .shx (14), .gz (10), .prj (10), .egg (6), .sh (5), .kml (4), .1 (3), .pyc (3), .zip (3), .bat (2), .csv (2), .jpg (2), .sample (2), .vrt (2), .bz2 (1), .cfg (1), .conf (1), .coveragerc (1), .dot-file (1), .eot (1), .ico (1), .ignoreme (1), .in (1), .keep (1), .rst (1), .sql (1), .svg (1), .tar (1), .tgz (1), .tpl (1), .unkn (1), .unknown (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "18,1 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Fractalius",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Fractalius installer (image editing plugin)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".8bf (2), .bin (2), .chm (1), .exe (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "3,77 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Franz_22set14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Presentation of sacrofago's project schedule"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".doc"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "23,5 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository" ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Img_visit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "ATI images and videos concerning APA conference, visitlab images"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (18), .avi (2), .mp4 (2)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "1,67 GB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A digital curator should be able to identify macroareas where common objects can be stored. Finding macroareas makes the work of the digital curator faster, easier and definitely more accurate. It also gives the opportunity to produce a more organized set of files that the institution can benefit from."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder" ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Hard_Disk_2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Corsi_sicurezza"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "5,28 GB"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto" : [ {
+    "@value" : "1012 elements"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The main repository is usually an external hard drive where the institution stored its files. However, it might be even a computer or other storage devices, if the institution decided to adopt a different approach."
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Scripts and metadata"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".py (21), .gif (20), .pyc (18), .html (17), .css (15), .png (13), .js (12), .db (2), .jpg (2), .conf (1), .json (1), .txt (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "383 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PAVIA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Rendered video of Pavia made with Blender"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".mp4 (1), .ogg (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "71,7 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PSCS2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Photoshop CS2"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".psd (75), .htm (48), .reg (45), .aco (31), .cha (31), .pdf (24), .html (18), .gif (17), .8bf (11), .8bi (9), .afs (6), .jpg (6), .msi (5), .exe (4), .tb0 (4), .ini (3), .cab (2), .md0 (2), .txt (2), .wri (2), .dll (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "332 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Pictures",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Personal pictures, wallpapers, guides, movie pictures"
+  } ],
+  "http://purl.org/dc/elements/1.1/type" : [ {
+    "@value" : "directory"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Macroareas"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (919), .png (41), .blend (4), .pdf (3), .mov (3), .avi (2), .bak (1), .gif (1), .ini (1), .mp4 (1), .tga (1), .txt (1), .xcf (1), .zip (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "5,25 GB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyNetwork",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Python exercises"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".html (45), .py (19), .ds_store (2), .ht (1), .pdf (1), .pyw (1), .xml (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "221 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#PyTOUGH-master",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Python library"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".tex (11), .py (10), .bib (1), .md (1), .pdf (1), .txt (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "878 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Qt programming"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".cpp (127), .png (107), .hpp (79), .o (41), .pro (39), .h (13), .qrc (10), .cmake (9), .dat (9), .svg (8), .txt (7), .wav (7), .make (4), .qm (4), .user (4), .autosave (3), .js (3), .ts (3), .bin (2), .out (2), .a (1), .c (1), .check_cache (1), .gif (1), .html (1), .in (1), .includecache (1), .internal (1), .log (1), .marks (1), .py (1), .tpl (1), .types (1), .ui (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "6,52 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QtLutEditor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Cross-platform C++, JavaScript and QML integrated development environment which simplifies GUI application development"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".cpp (13), .h (12), .ui (3), .pro (1), .qrc (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "52,6 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Video showing a 3D oak"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".avi"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "2,18 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#QuerciaPallaTest_Dilate",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Video showing a 3D oak"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".avi"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "2,17 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Blender render farm sceenshots - animatic"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (12)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "1,11 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Application"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".py (41), .html (24), .css (12), .js (12), .conf (4), .png (4), .sqlite3 (4), .txt (4), .sh (3), .wsgi (3), .crt (2), .key (2), .bash (1), .csr (1), .ico (1), .srl (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "418 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Application"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".html (28), .py (20), .pyc (19), .png (16), .js (10), .css (6), .in (4), .blend (3), .gif (2), .ttf (2), .txt (2), .bk (1), .c (1), .conf (1), .db (1), .eot (1), .ico (1), .map (1), .sh (1), .svg (1), .woff (1), .wgi (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "620 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Ricoh-Aficio_MP_C4501-pxlcolor-Ricoh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "PostScript Printer Description file"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".ppd"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "95,0 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SDL-1.2.15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Simple DirectMedia Layer, version 1.2.15"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".c (342), .h (331), .html (205), .3 (174), .o (110), .lo (55), .plist (51), .vcproj (20), .cpp (18), .cc (16), .m (15), .dsp (14), .nib (13), .m4 (11), .pbxproj (11), .in (10), .pch (9), .strings (9), .sh (8), .s (7), .txt (7), .icns (6), .vcp (6), .asm (5), .zip (4), .bmp (3), .csh (3), .r (3), .sln (3), .bin (2), .dc (2), .dsw (2), .info (2), .rc (2), .rtf (2), .amigaos (1), .beos (1), .dat (1), .default (1), .gif (1), .guess (1), .hg (1), .inc (1), .lib (1), .log (1), .macos (1), .macosx (1), .minimal (1), .mint (1), .nanox (1), .nds (1), .os2 (1), .pc (1), .pdf (1), .picogui (1), .pl (1), .porting (1), .ps3 (1), .qnx (1), .qpg (1), .qtopia (1), .riscos (1), .spec (1), .status (1), .sub (1), .symbian (1), .vcw (1), .watcom (1), .wav (1), .wince (1), .wscons (1), .x (1), .xbm (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "5,46 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SEGY",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Data files containing geophysical data"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".segy (4)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "108 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SW",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Visualization tool"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".cpp (2785), .h (2702), .png (1265), .py (704), .qbs (586), .qml (539), .pro (323), .ui (227), .txt (201), .pri (182), .qdoc (173), .xml (127), .jar (125), .qrc (94), .pyc (83), .in (70), .json (49), .js (48), .css (35), .qmlproject (34), .qmltypes (24), .mm (23), .sh (23), .java (21), .c (20), .tsv (19), .svg (18), .0 (17), .ts (16), .conf (15), .qdocinc (14), .1 (13), .pl (13), .qdocconf (13), .m (12), .ico (10), .jpg (10), .out (9), .bat (8), .html (8), .plist (8), .zip (7), .dll (6), .frag (6), .gz (6), .template (6), .vert (6), .xib (6), .xq (6), .2 (5), .exe (5), .data (4), .dylib (4), .ini (4), .md (4), .rc (4), .so (4), .asm (3), .config (3), .creator (3), .files (3), .g (3), .gif (3), .icns (3), .includes (3), .lgplv21 (3), .lgplv3 (3), .metainfo (3), .patch (3), .tex (3), .wxs (3), .creatortheme (2), .gitignore (2), .glsl (2), .inc (2), .input (2), .kms (2), .l (2), .lgpl (2), .manifest (2), .pbxproj (2), .pch (2), .pdf (2), .prf (2), .s (2), .strings (2), .tpl (2), .vmoptions (2), .4d4a4c4 (1), .aegis (1), .annotated (1), .bg (1), .blubb (1), .c++ (1), .command (1), .def (1), .desktop (1), .dia (1), .ds_store (1), .expected (1), .fsh (1), .gitmodules (1), .grass (1), .hpp (1), .htc (1), .ignore (1), .inp (1), .keywords (1), .kwgen (1), .license (1), .linux (1), .map (1), .mingw (1), .narf (1), .odt (1), .osx (1), .properties (1), .qs (1), .rtf (1), .sample (1), .sed (1), .source (1), .storyboard (1), .sty (1), .suo (1), .sx (1), .user (1), .vsh (1), .wildcard (1), .wxl (1), .xpm (1), .zort (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "147 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Single files might be found, and if they appear to be too important to be removed, they must be classified as such."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Instead each backup folder there might be sub and sub-subfolders. It is very important to avoid having extremely long file paths."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Tiz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Visitlab pictures"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (8), .zip (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "1.83 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Update_29072014.new",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Presentation of sacrofago's project schedule"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".doc"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "174 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#WHToolbar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "WHToolbar builder"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".cpp (3), .o (3), .h (2), .pro (1), .ui (1), .user (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "241 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Witness_Trailer_compressed_720p",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "3D trailer"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".mov"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "263 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#appunti",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Files and explanations on how to install Nvidia driver"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".js (19), .html (7), .css (4), .loaded_0 (1), .loaded_1 (1), .pdf (1), .png (2), .txt (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "998 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ball06",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Video depicting three colored balls jumping"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".avi"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "1,35 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A folder, or a file, usually belongs to a main one, which is their father."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MainRepository"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#bo_h20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Bologna delle Acque project images and html files displaying the various images"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (107), .hml (56), .bak (1), .tmp (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "23,5 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#casa",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "House project"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (19), .pdf (16), .dwg (6), .pln (6), .bpn (4), .bak (3), .bmp (2), .lck (2), .png (2), .err (1), .mov (1), .txt (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "138 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#cin_people",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Information concerning people working at Cineca"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".png (38), .js (37), .gif (10), .css (7), .html (6), .txt (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "757 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFile",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A folder can contain single files."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A folder contains files of various formats. This properties allows to define them and write them as a string."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A folder can contain other folders containing other folders or elements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#d3js",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Javascript library for producing interactive data visualizations"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".html (7), .md (3), .js (2), .tsv (2) .json (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "228 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#desktop",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Ini file"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".ini"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "282 byte"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#download",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Downloaded files"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".exe (2), .zip (2), .bz2 (1), .msi (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "171 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#dvd_cover",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Images showing the content of a 2007 backup"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".cch (3), .jpg (3)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "321 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ebook",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Guides and newspapers"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".pdf (13)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "91,6 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ffmpeg-2.4.1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Decoding multimedia framework"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".c (1765), .h (700), .s (90), .asm (87), .mak (65), .texi (45), .txt (14), .rc (9), .sh (9), .v (9), .ffpreset (5), .0 (4), .1 (4), .cpp (4), .css (3), .md (3), .conf (2), .m (2), .pl (2), .py (2), .6bit (1), .ffmeta (1), .gplv2 (1), .gplv3 (1), .html (1), .inc (1), .init (1), .lgplv3 (1), .pm (1), .ref (1), .supp (1), .template (1), .xsd (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "10,3 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#fontconfig",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Cache files"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".cache-3 (40)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "80,2 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#gannt-dva",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "File to share information concerning a project"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".mpx"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "8,21 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#genova",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Blender project"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".blend"
+  }, {
+    "@value" : "126 KB"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#giovanni1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vnc file"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".vnc"
+  }, {
+    "@value" : "104 byte"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#graphviz",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Graph exercises"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".dot (2), .jpg (2)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "2,65 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property allows to describe the size that the file occupies."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#long"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#idlex-1.12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Python extension"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".py (77), .pyc (28), .txt (5), .pyw (2), .pyx (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "396 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "14,8 MB"
+  }, {
+    "@value" : "Applications"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".h (882), .c (404), .cpp (374), .py (346), .html (201), .png (190), .gif (137), .js (126), .css (79), .txt (65), .tga (52), .hpp (28), .sh (28), .mesh (15), .in (13), .blend (12), .db (12), .inl (9), .a (8), .ttf (7), .wsgi (7), .lib (6), .cc (5), .conf (5), .dll (5), .lua (4), .sql (4), .zip (4), .ico (3), .map (3), .project (3), .pydevproject (3), .svg (3), .eot (2), .scss (2), .so (2), .sqlite3 (2), .woff (2), .config (1), .creator (1), .dylib (1), .exe (1), .files (1), .gitignore (1), .hh (1), .includes (1), .json (1), .la (1), .maa (1), .md (1), .mingw (1), .mm (1), .mma (1), .otf (1), .plist_default (1), .rb (1), .rc (1), .user (1)"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#logoCinecaVisit",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Cineca visitlab logo"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpeg (12), .jpg (7), .png (5), .html (2), .xcf (2)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "795 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#median_filter_pseudo_code_sil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Code"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".txt"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "1,53 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#nvidia-bug-report.log",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Nvidia bug report"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".gz"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "61,2 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#odlsdva2014",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Schedule"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".xlsx"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "20,1 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#organizedInto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "This property allows to define how elements are organized inside a bigger folder."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#BackupFolder"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#MacroAreasFolder"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Applications"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".h (117), .dds (74), .o (72), .cpp (70), .d (57), .mk (7), .tga (4), .a (2), .1 (1), .5 (1), .c (1), .icns (1), .json (1), .linux (1), .ovrf (1), .rules (1), .sh (1), .txt (1), .xml (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "65,5 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#photoscan-pro",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Geoids, lang, licenses, modules, python"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".py (1339), .dectest (143), .txt (112), .so (63), .pyc (29), .qm (14), .pem (13), .exe (7), .gif (7), .0 (5), .zip (5), .1 (4), .4 (4), .def (4), .pck (4), .au (3), .xml (3), .bat (2), .c (2), .html (2), .pickle (2), .vbs (2), .2 (1), .3 (1), .8svx (1), .a (1), .aif (1), .aifc (1), .aiff (1), .cfg (1), .config (1), .css (1), .ctypes (1), .db (1), .hcom (1), .icns (1), .in (1), .ini (1), .local (1), .o (1), .out (1), .pgm (1), .pyw (1), .rst (1), .sample (1), .sh (1), .sndt (1), .tar (1), .types (1), .voc (1), .wav (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "28,5 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Instruction notes"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".txt"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "1,06 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#py_list",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "List of paths explaining where to find some python files"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".txt"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "322 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#sil",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SingleFile" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vnc file"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".vnc"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "99 byte"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#splotchRT",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Application"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".svn-base (612), .hpp (118), .inl (103), .geom (83), .h (32), .cpp (29), .c (11), .jpg (9), .frag (7), .vert (7), .pro (6), .tmp (5), .png (4), .info (3), .tga (2), .txt (2), .bin (1), .ds_store (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "7,45 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#trime8",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Vnc file"
+  } ],
+  "http://purl.org/dc/elements/1.1/format" : [ {
+    "@value" : ".vnc"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "104 byte"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ubuntu_icons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Ubuntu icons"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".svg (437), .png (6), .icon (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "675 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#unibo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Project for Unibo"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".png (9), .sh (4), .blend (3), .log (3), .pbs (3), .exr (2), .zip (2), .e1882678 (1), .e1885777 (1), .e1885779 (1), .o18826778 (1), .o1885777 (1), .o1885779 (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "514 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#virtual_box",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Fedora virtual box"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".ova (3), .iso (2), .txt (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "5,64 GB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ATI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "\"Ati alla scoperta di Veio\" project"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".bphys (26070), .jpg (985), .gz (693), .exr (500), .blend (326), .png (174), .wav (75), .jpeg (64), .log (62), .py (38), .db (15), .sh (14), .zip (10), .txt (3), .bat (2), .in (2), .mp4 (2), .blend1 (1), .blend2 (1), .ogg (1), .xcf (1), .planner (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "3,48 GB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFolder" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#Metadata"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RF_shot"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RVN05"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#RenderFarm"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#labs"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#ovr_sdk_0501"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#profiling_lab79"
+  }, {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_ferrari",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Ferrari truck and Bologna images"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (12), .blend (6), .blend1 (2), .jpeg (1), .png (1), .xcf (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "144 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_robot_festival",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Gource video and related explanation"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2016_Desktop_B"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (1), .mp4 (1), .pdf (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "232 MB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_sarcofago",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "\"Il sarcofago degli sposi\" project"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2015_Desktop"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".jpg (3549), .tif (1125), .png (709), .blend (44), .avi (24), .blend1 (13), .mp4 (8), .blend2 (7), .txt (7), .fbx (6), .pdf (6), .zip (6), .gz (2), .svg (2), .xcf (2), .aif (1), .bpn (1), .htm (1), .lck (1), .pln (1), .py (1), .run (1), .sh (1), .tgz (1), .wav (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "7,68 GB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#web_dev",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Two html pages: a translator and a tool to calculate geographical distance between places"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#2017_Desktop_win"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".html (2)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "2,99 KB"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#webapps",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#SubFolder" ],
+  "http://purl.org/dc/elements/1.1/description" : [ {
+    "@value" : "Web applications"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#belongsTo" : [ {
+    "@id" : "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#visit_devel"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#containsFiles" : [ {
+    "@value" : ".html (45), .py (43), .gif (41), .js (30), .png (28), .css (19), .sh (12), .svg (6), .txt (4), .c (2), .wsgi (2), .blend (1), .jpg (1)"
+  } ],
+  "http://www.semanticweb.org/david/ontologies/2021/0/untitled-ontology-3#hasSize" : [ {
+    "@value" : "506 KB"
+  } ]
+} ]
